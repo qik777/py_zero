@@ -1,0 +1,42 @@
+# 执行命令：
+python run_augmentation.py imagenet_samples more_samples 1000 --rotate_angle_vari 180 --p_rotate_crop 0.5
+
+----------------------------------------------------------------------------------------------------
+# python run_augmentation.py -h
+
+A Simple Image Data Augmentation Tool
+
+positional arguments:
+  input_dir             Directory containing images
+  output_dir            Directory for augmented images
+  num                   Number of images to be augmented
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --num_procs NUM_PROCS
+                        Number of processes for paralleled augmentation
+                        (default: 12)
+  --p_mirror P_MIRROR   Ratio to mirror an image (default: 0.5)
+  --p_crop P_CROP       Ratio to randomly crop an image (default: 1.0)
+  --crop_size CROP_SIZE
+                        The ratio of cropped image size to original image
+                        size, in area (default: 0.8)
+  --crop_hw_vari CROP_HW_VARI
+                        Variation of h/w ratio (default: 0.1)
+  --p_rotate P_ROTATE   Ratio to randomly rotate an image (default: 1.0)
+  --p_rotate_crop P_ROTATE_CROP
+                        Ratio to crop out the empty part in a rotated image
+                        (default: 1.0)
+  --rotate_angle_vari ROTATE_ANGLE_VARI
+                        Variation range of rotate angle (default: 10.0)
+  --p_hsv P_HSV         Ratio to randomly change gamma of an image (default:
+                        1.0)
+  --hue_vari HUE_VARI   Variation of hue (default: 10)
+  --sat_vari SAT_VARI   Variation of saturation (default: 0.1)
+  --val_vari VAL_VARI   Variation of value (default: 0.1)
+  --p_gamma P_GAMMA     Ratio to randomly change gamma of an image (default:
+                        1.0)
+  --gamma_vari GAMMA_VARI
+                        Variation of gamma (default: 2.0)
+
+
