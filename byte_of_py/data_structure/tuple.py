@@ -1,0 +1,18 @@
+# 我会推荐你总是使用括号
+# 来指明元组的开始与结束
+# 尽管括号是一个可选选项。
+# 明了胜过晦涩，显式优于隐式。
+
+# 元组的一大特征类似于字符串，它们是不可变的，也就是说，你不能编辑或更改元组。
+zoo = ('python', 'elephant', 'penguin')
+print('Number of animals in the zoo is', len(zoo))
+new_zoo = 'monkey', 'camel', zoo
+print('Number of cages in the new zoo is', len(new_zoo))
+print('All animals in new zoo are', new_zoo)
+print('Animals brought from old zoo are', new_zoo[2])
+print('Last animal brought from old zoo is', new_zoo[2][2])
+print('Number of animals in the new zoo is',
+len(new_zoo)-1+len(new_zoo[2]))
+
+# will cause error
+# del new_zoo[2][2]
